@@ -1,3 +1,17 @@
 body{
-    background-color: aquamarine;
+    margin: 0;
+    font-family: 'Courier New', 'Times New Roman';
+    margin: 0;
+    display: flex;
+    font-size:1vw;
+}
+.wrapper{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    width:100%;
 }

@@ -50,3 +50,16 @@ let originalMoviesList = [
         tag: "lepsum lepsum lepsum lepsum"
     }
 ];
+
+function onInputHandler() {
+    let inputValue = document.getElementById("MOVIEINPUT").value;
+    var searchTerm = inputValue;
+    console.log(inputValue);
+    let matchedTerms = [];
+    searchTerm = searchTerm.toLowerCase();
+    // -----------------ans1--------------------
+    matchedTerms = originalMoviesList.filter(function(i) {
+        return i.name.toLowerCase().indexOf(searchTerm) > -1;
+    });
+    appendMovies(matchedTerms);
+};

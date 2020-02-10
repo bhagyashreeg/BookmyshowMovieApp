@@ -15,3 +15,106 @@ body{
     display: flex;
     width:100%;
 }
+
+.header{
+    display: flex;
+    width:100%;
+}
+.ul-movie-UL{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+li{
+    text-align: center;
+   
+}
+
+
+.title-1{
+   background: #0e0d0d;
+   /* width: 300px; */
+   height: 50px;
+   flex-basis: 200px;
+   text-align: center;
+   font-size: xx-large;
+}
+.title-2{
+   background: #130b29;
+   flex-basis: 490px;
+}
+.title-2 input[type=text]{
+   background: #fdfdfd;
+   flex-basis: 10px;
+   align-content: flex-end;
+   padding: 10px;
+   width: 80%;
+   border:1px;
+   margin-top: 6px;
+}
+.title-3 {
+   background: #130b29;
+   flex-basis: 679px;
+}
+.movieNameInput{
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+}
+.inner-title-3-cmds{
+   margin-top: 6px;
+   padding: 10px 9px 10px 100px;
+ }
+ .h1head1{
+   width: 300px;
+   flex-basis: 200px;
+   text-align: center;
+   font-size: x-large;
+
+}
+.h1head2{
+   text-align: center;
+   font-size: x-large;
+
+}
+.h1head3{
+   text-align: center;
+   font-size: x-large;
+}
+.h1head3:hover,.h1head2:hover,.h1head1:hover{
+   background-color: tomato;
+}
+.input-submit-search{
+   float: right;
+   width: 15.85%;
+   padding: 6.71px;
+   background: #2196F3;
+   color: white;
+   font-size: 17px;
+   border: 1px solid grey;
+   border-left: none;
+   cursor: pointer;
+   margin-top: 6px;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+ }
+ .app-name{
+     color: red;
+     padding: -10px 10px 10px 10px;
+     font-size: 60%;
+     font-weight: bolder;
+    
+ }
+ .inner-title-3-cmds a{
+   color: rgb(255, 255, 255);
+ }
+ .inner-title-3-cmds h7{
+     font-size: 110%;
+     vertical-align: middle;   
+ }
+ 
+
+ .aHrefImage{
+   text-decoration: none;
+ }

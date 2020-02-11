@@ -45,7 +45,7 @@ let originalMoviesList = [
         tag: "lepsum lepsum lepsum lepsum"
     },
     {
-        name: "HouseFull 4", 
+        name: "HouseFull 4",
         url: "images/Housefull.jpg",
         tag: "lepsum lepsum lepsum lepsum"
     }
@@ -63,3 +63,35 @@ function onInputHandler() {
     });
     appendMovies(matchedTerms);
 };
+
+appendMovies(originalMoviesList);
+
+function appendMovies(movieList) {
+    console.log(movieList);
+    let movieElement = document.getElementById("movieContainer");
+    movieElement.innerHTML = '';
+    let ulElement = document.createElement("ul");
+    ulElement.className = "ul-movie-UL"
+    for (let i = 0; i < movieList.length; i++) {
+
+        let liElement = document.createElement("li");
+        let imageNode = document.createElement("img");
+        
+        imageNode.src = movieList[i].url;//setting the src...
+
+        let titleNode = document.createElement("h3");
+        titleNode.innerHTML = movieList[i].name;
+
+        ahrefElement = document.createElement('a');
+        ahrefElement.className = "aHrefImage";
+        ahrefElement.href =  originalMoviesList[i].url;
+
+        ahrefElement.appendChild(imageNode)
+        ahrefElement.appendChild(titleNode)
+
+        liElement.appendChild(ahrefElement);
+        ulElement.appendChild(liElement);
+
+    }
+    movieElement.appendChild(ulElement);
+}

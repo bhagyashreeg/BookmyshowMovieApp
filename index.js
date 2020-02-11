@@ -7,7 +7,7 @@ let originalMoviesList = [
     {
         name: "LaughTon ohara",
         url: "images/LaughTon_ ohara.jpg",
-        tag: "lepsum lepsum lepsum lepsum"
+        tag: "lepsum lepsum hello lepsum lepsum"
     },
     {
         name: "Red Cliff",
